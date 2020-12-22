@@ -236,7 +236,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
-  bootstrap-sass (~> 3.4, >= 3.4.1)
+  bootstrap-sass (~> 3.4.1)
   byebug
   capybara (>= 2.15)
   guard (~> 2.16, >= 2.16.2)
@@ -247,6 +247,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)
+  sassc-rails (>= 2.1.0)
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
