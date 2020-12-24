@@ -34,7 +34,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -55,6 +54,7 @@ group :test do
   gem 'minitest-reporters', '~> 1.4', '>= 1.4.2'
   gem 'guard', '~> 2.16', '>= 2.16.2'
   gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
