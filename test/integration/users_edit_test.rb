@@ -5,10 +5,6 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     @user = users(:glenna)
   end
 
-  def log_in_as(user, password: 'password')
-    post login_path, params: { session: { email: user.email, password: password } }
-  end
-
   test 'unsuccessful edit' do
     log_in_as(@user)
     get edit_user_path(@user)
