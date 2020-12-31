@@ -4,3 +4,8 @@ glenna:
   name: Glenna Reichert
   email: chaim_mcdermott@dana.io
   password_digest: <%= User.digest('password') %>
+
+dietrich:
+  name: Chelsey Dietrich
+  email: lucio_hettinger@annie.ca
+  password_digest: <%= User.digest('password') %>
