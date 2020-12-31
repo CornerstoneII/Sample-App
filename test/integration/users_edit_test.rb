@@ -5,16 +5,21 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     @user = users(:glenna)
   end
 
+  def log_in_as(user, password: 'password')
+    post login_path, params: { session: { email: user.email, password: password } }
+  end
+
   test 'unsuccessful edit' do
+    log_in_as(@user)
     get edit_user_path(@user)
     assert_template 'users/edit'
-    patch user_path(@user), params: { user:
-    { name: '', email: 'foo@invalid', password: 'foo', password_confirmation: 'bar' } }
+    patch user_path(@user), params: { user: { name: '', email: 'foo@invalid', password: 'foo', password_confirmation: 'bar' } }
     assert_template 'users/edit'
     assert_select 'div.alert', text: 'The form contains 4 errors.'
   end
 
   test 'successful edit' do
+    log_in_as(@user)
     get edit_user_path(@user)
     assert_template 'users/edit'
     name = 'Glenna Reichert'
