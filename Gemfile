@@ -28,6 +28,11 @@ gem 'bcrypt', '~> 3.1.7'
 # used to easily generate fake data
 gem 'faker', '~> 2.15', '>= 2.15.1'
 
+# will_paginate provides a simple API for performing paginated queries with Active Record
+gem 'will_paginate', '~> 3.3'
+# Hooks into will_paginate to format the html to match Twitter Bootstrap styling
+gem 'bootstrap-will_paginate', '~> 1.0'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
