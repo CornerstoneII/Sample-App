@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'noreply@rubyrailstutorial.com'
+  default from: 'noreply@youknowwho.com'
   layout 'mailer'
 end
