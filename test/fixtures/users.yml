@@ -5,14 +5,14 @@ glenna:
   email: chaim_mcdermott@dana.io
   password_digest: <%= User.digest('password') %>
   activated: true
-activated_at: <%= Time.zone.now %>
+  activated_at: <%= Time.zone.now %>
 
 dietrich:
   name: Chelsey Dietrich
   email: lucio_hettinger@annie.ca
   password_digest: <%= User.digest('password') %>
   activated: true
-activated_at: <%= Time.zone.now %>
+  activated_at: <%= Time.zone.now %>
 
 michael:
   name: Michael Example
